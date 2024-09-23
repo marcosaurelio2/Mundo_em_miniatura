@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); /* Gradiente escuro com tons roxos e azuis */
+    color: #ffffff; /* Cor do texto em branco */
+    font-family: "Roboto", sans-serif; /* Fonte padrão */
+}
+
+header {
+    padding: 16px 0;
+    background-color: #00ffcc; /* Verde água neon */
+    color: #000000; /* Texto escuro */
+}
+
+header, 
+section h2,
+section h3,
+form button{
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+header h1 {
+    margin-left: 16px;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para o título */
+}
+
+section h2 {
+    color: #00ffcc; /* Cor do subtítulo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para subtítulo */
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+header nav li a {
+    color: #ff007f; /* Rosa neon */
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    color: #a201ff; /* Muda roxo ao passar o mouse */
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container, 
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fachada {
+    max-width: 500px; /* A imagem não será maior que o contêiner */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin-right: 32px; /* Centraliza a imagem */
+}
+
+.logos img {
+    height: 50px;
+}
+
+.logos li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* Estilo para a seção de redes sociais */
+.social-media {
+    display: flex; /* Usar flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 16px; /* Adiciona um espaço acima, se necessário */
+}
+
+.social-media img {
+    height: 24px; /* Altura das imagens de redes sociais */
+}
+
+.social-media li {
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 8px; /* Espaçamento à direita entre logos */
+}
+
+.social-media li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+#contact .container {
+    display: flex; /* Usar flexbox para layout */
+    flex-direction: column; /* Alinha em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.contact-method {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    border: 1px solid #00ffcc; /* Bordas em verde água neon */
+    color: #ffffff; /* Texto branco */
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Sombra para inputs */
+}
+
+form textarea {
+    resize: none;
+}
+
+button {
+    background-color: #00ffcc; /* Verde água neon */
+    color: #000000; /* Texto escuro */
+    border: none;
+}
+
+form button:hover {
+    background-color: #ff007f; /* Pink neon ao passar o mouse */
+}
+
+input:focus, textarea:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: #ff007f; /* Muda a borda para pink neon ao focar */
+}
+
+footer {
+    background-color: #00ffff; /* Azul ciano neon */
+    color: #000000; /* Texto escuro */
+    padding: 16px 20px; /* Espaçamento interno (superior e inferior, esquerdo e direito) */
+    font-size: 12px; /* Tamanho da fonte do rodapé */
+    text-align: center; /* Centraliza o texto do rodapé */
+}
+
+h1, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para títulos */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha itens em coluna */
+    }
+}
+
